@@ -1,0 +1,1 @@
+CREATE SCHEMA kt_schema AUTHORIZATION kt_admin;

@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kt_demo_db
+    username: kt_admin
+    password: kt_demo_db_123
+    hikari:
+      schema: kt_schema
+  liquibase:
+    enabled: true
+    change-log: db/liquibase/changelog/changelog.xml

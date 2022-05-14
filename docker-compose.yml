@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    container_name: kt-demo
+    environment:
+      - POSTGRES_DB=kt_demo_db
+      - POSTGRES_USER=kt_admin
+      - POSTGRES_PASSWORD=kt_demo_db_123
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./src/main/resources/db/init/:/docker-entrypoint-initdb.d/:rw
